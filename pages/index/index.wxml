@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class='game'>
+   <text class='info'>你已经获胜了</text>
+   <text class='wintimestyle'>{{wintimes}}</text>
+   <text class='info'>次</text>
+</view>
+
+<view class='result'>
+   <image src='{{robotImg}}'></image>
+   <text class='resinfostyle'>{{resinfo}}</text>
+   <image src='{{myImg}}'></image>
+</view>
+
+<view class='select-options-panel'>
+  <text class='slogan'>出拳吧！骚年！</text>
+  <!-- 图片选项 -->
+  <view class='select-options'>
+    <image src='../../images/0.png' id='0' bindtap='select'></image>
+    <image src='../../images/1.png' id="1" bindtap='select'></image>
+    <image src='../../images/2.png' id="2" bindtap='select'></image>
+  </view>
+  <button class='startbtn' type='primary' bindtap='start' disabled='{{tapable}}'>开始</button>
+</view>
